@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entwässerungs-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Start- & Quiz-Bereich -->
+        <div id="quiz-box">
+            <h1>Das große Entwässerungs-Quiz</h1>
+            <hr>
+            <div id="question-text">Hier steht die Frage...</div>
+            
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Die Buttons werden per JavaScript eingefügt -->
+            </div>
+            
+            <!-- Infobox für die Erklärung nach der Antwort -->
+            <div id="explanation-container" class="hide">
+                <h3>Gewusst wie? 💧</h3>
+                <p id="explanation-text">Hier steht die Erklärung...</p>
+                <button id="next-btn" class="next-btn">Nächste Frage</button>
+            </div>
+        </div>
+
+        <!-- Ergebnis-Bereich (wird am Ende eingeblendet) -->
+        <div id="result-box" class="hide">
+            <h1>Auswertung</h1>
+            <hr>
+            <p id="score-text">Du hast X von Y Punkten erreicht!</p>
+            <button onclick="location.reload()">Quiz Neustarten</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

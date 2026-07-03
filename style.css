@@ -1,0 +1,155 @@
+/* --- RESPONSIVES DESIGN: TAG DER OFFENEN TÜR (WASSER-THEMA) --- */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Ein frischer, moderner Farbverlauf in Wasser-Blautönen */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px; 
+    box-sizing: border-box;
+    color: #333;
+}
+
+.quiz-container {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 20px; 
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    width: 100%; 
+    max-width: 600px;
+    text-align: center;
+    border: 3px solid #1e3c72;
+    box-sizing: border-box;
+}
+
+h1 { 
+    color: #1e3c72;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.6rem; 
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #2a5298;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.15rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* --- OPTIMIERTES SMARTPHONE-RASTER --- */
+.btn-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Buttons untereinander für Touch-Bedienung */
+    gap: 12px;
+    margin: 20px 0;
+}
+
+/* --- DESIGN FÜR DIE ANTWORT-BUTTONS --- */
+button {
+    padding: 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    background-color: #f4f7f6;
+    color: #1e3c72;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+button:hover:not([disabled]) {
+    background-color: #e6eeff;
+    border-color: #1e3c72;
+}
+
+/* --- ERFOLGS- & FEHLERFARBEN --- */
+button.correct {
+    background-color: #2ecc71 !important;
+    color: white;
+    border-color: #27ae60;
+}
+
+button.wrong {
+    background-color: #e74c3c !important;
+    color: white;
+    border-color: #c0392b;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* --- ERKLÄRUNGS-BOX --- */
+#explanation-container {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ebf3f9;
+    border-left: 5px solid #2a5298;
+    border-radius: 4px;
+    text-align: left;
+}
+
+#explanation-container h3 {
+    color: #1e3c72;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+#explanation-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #34495e;
+}
+
+/* --- NÄCHSTE-FRAGE-BUTTON --- */
+.next-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.next-btn:hover {
+    background-color: #2a5298;
+}
+
+.hide {
+    display: none;
+}
+
+/* --- ANPASSUNG FÜR GRÖSSERE BILDSCHIRME (DESKTOP) --- */
+@media (min-width: 480px) {
+    .quiz-container {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #question-text {
+        font-size: 1.3rem;
+    }
+    .btn-grid {
+        grid-template-columns: 1fr 1fr; /* PC-Ansicht: 2 Knöpfe nebeneinander */
+        gap: 15px;
+    }
+}
