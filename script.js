@@ -29,6 +29,16 @@ const questions = [
             { text: "Gar nicht, der Schutz liegt rechtlich allein bei der Stadt.", correct: false }
         ],
         explanation: "Wenn die öffentliche Kanalisation bei Starkregen vollsteht, drückt das Wasser rückwärts in die Hausanschlüsse. Liegen Räume (wie Keller) unterhalb der Straßenebene, schützt nur eine funktionierende Rückstausicherung vor einer Schlammlawine im Haus!"
+    },
+    {
+        question: "Warum ist eine regelmäßige Kanalinspektion (z. B. per Kamera) so wichtig?",
+        answers: [
+            { text: "Um den baulichen Zustand des Kanals frühzeitig auf Schäden, Risse und Ablagerungen zu untersuchen.", correct: true },
+            { text: "Um zu überprüfen, ob die Ratten im Kanal ihre Miete pünktlich bezahlen.", correct: false },
+            { text: "Um nachzusehen, ob das Abwasser auch wirklich bergauf fließt.", correct: false },
+            { text: "Damit man verlorene Schlüssel und Eheringe wiederfindet.", correct: false }
+        ],
+        explanation: "Eine optische Inspektion (z. B. per Kanalfernsehen) deckt Risse, Wurzeleinwüchse, Ablagerungen oder Undichtigkeiten auf, bevor es zu teuren Rohrbüchen, Verstopfungen oder Umweltbelastungen kommt."
     }
 ];
 
